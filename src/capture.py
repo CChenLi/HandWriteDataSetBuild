@@ -11,16 +11,22 @@ class Example(QMainWindow):
         self.label = label
         self.uid = uid
         self.custompath=custompath
-        self.setWindowTitle("press 's' to save")
+        self.setWindowTitle("Keycut: 's' save; 'c' new draw of same label")
         self.setGeometry(400, 400, 400, 400)
         self.image = QImage(self.size(), QImage.Format_RGB32)
         self.image.fill(Qt.white) 
         mainMenu = self.menuBar() 
         fileMenu = mainMenu.addMenu("File") 
+
         saveAction = QAction("Save", self) 
         saveAction.setShortcut("s") 
         fileMenu.addAction(saveAction) 
         saveAction.triggered.connect(self.save) 
+
+        clearAction = QAction("Clear", self)
+        clearAction.setShortcut("c")
+        fileMenu.addAction(clearAction)
+        clearAction.triggered.connect(self.clear)
         
         self.setMouseTracking(False)
         self.pos_xy = []
@@ -32,6 +38,9 @@ class Example(QMainWindow):
             filePath, _ = QFileDialog.getSaveFileName(self, "Save Image", "", "PNG(*.png);;JPEG(*.jpg *.jpeg);;All Files(*.*) ") 
         self.image.save(filePath) 
         print(filePath)
+
+    def clear(self):
+        self.close()
 
     def paintEvent(self, event):
         painter = QPainter(self.image)
