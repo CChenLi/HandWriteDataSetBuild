@@ -6,7 +6,7 @@ the lyric of a Bai folk song.
 
 This project is the script for building handwriting dataset. A sub-project for Bai character dataset. 
 
-### Before you want to contribute to this project, please contact me to get your unique **User ID** to avoid redundant work.
+### Before you want to contribute to this project, please contact me to get your unique User-ID to avoid redundant work.
 
 ### [Label List]() under construction
 
