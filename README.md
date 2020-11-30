@@ -36,7 +36,7 @@ Then click `Start Drawing` to write, which will show you the drawing window
 
 When you finish one image, press `n` to save current and start drawing next. 
 
-When all images are finished, you will find all the png file in the folder `data` named as *(caution naming rule hasn't finalized)*
+When all images are finished, you will find all the png file in the folder `data` named as **(caution naming rule hasn't finalized)**
 `<label>_<uid>_<batch>.png`
 
 ## Author
