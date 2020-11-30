@@ -6,12 +6,13 @@ import tkinter as tk
 import os
 
 class Example(QMainWindow):
-    def __init__(self, label, uid, custompath=False):
+    def __init__(self, label, uid, batch, custompath=False):
         super(Example, self).__init__()
         self.label = label
         self.uid = uid
+        self.batch = str(batch)
         self.custompath=custompath
-        self.setWindowTitle("Keycut: 's' save; 'c' new draw of same label")
+        self.setWindowTitle("Press 'n' to save current and draw next")
         self.setGeometry(400, 400, 400, 400)
         self.image = QImage(self.size(), QImage.Format_RGB32)
         self.image.fill(Qt.white) 
@@ -23,23 +24,24 @@ class Example(QMainWindow):
         fileMenu.addAction(saveAction) 
         saveAction.triggered.connect(self.save) 
 
-        clearAction = QAction("Clear", self)
-        clearAction.setShortcut("c")
-        fileMenu.addAction(clearAction)
-        clearAction.triggered.connect(self.clear)
+        nextAction = QAction("Next", self)
+        nextAction.setShortcut("n")
+        fileMenu.addAction(nextAction)
+        nextAction.triggered.connect(self.next)
         
         self.setMouseTracking(False)
         self.pos_xy = []
 
     def save(self): 
         pwd = os.getcwd()
-        filePath = pwd + "/data/" + self.label + "_" + self.uid + ".png"
+        filePath = pwd + "/data/" + self.label + "_" + self.uid + "_" + self.batch + ".png"
         if self.custompath:
             filePath, _ = QFileDialog.getSaveFileName(self, "Save Image", "", "PNG(*.png);;JPEG(*.jpg *.jpeg);;All Files(*.*) ") 
         self.image.save(filePath) 
         print(filePath)
 
-    def clear(self):
+    def next(self):
+        self.save()
         self.close()
 
     def paintEvent(self, event):
@@ -47,7 +49,7 @@ class Example(QMainWindow):
         psudo_painter = QPainter()
         painter.begin(self)
         psudo_painter.begin(self)
-        pen = QPen(Qt.black, 2, Qt.SolidLine)
+        pen = QPen(Qt.black, 10, Qt.SolidLine)
         painter.setPen(pen)
         psudo_painter.setPen(pen)
 
@@ -86,10 +88,13 @@ if __name__ == "__main__":
     master = tk.Tk()
     tk.Label(master, text="Label").grid(row=0)
     tk.Label(master, text="UID").grid(row=1)
+    tk.Label(master, text="Number of Images").grid(row=2)
     e1 = tk.Entry(master)
     e2 = tk.Entry(master)
+    e3 = tk.Entry(master)
     e1.grid(row=0, column=1)
     e2.grid(row=1, column=1)
+    e3.grid(row=2, column=1)
     tk.Button(master, 
           text='Start Drawing', 
           command=master.quit).grid(row=3, 
@@ -98,7 +103,7 @@ if __name__ == "__main__":
                                     pady=4)
 tk.mainloop()
 app = QApplication(sys.argv)
-pyqt_learn = Example(e1.get(), e2.get())
-pyqt_learn.show()
-# app.exec_()
-sys.exit(app.exec()) 
+for i in range(int(e3.get())):
+    pyqt_learn = Example(e1.get(), e2.get(), i)
+    pyqt_learn.show()
+    app.exec_()
