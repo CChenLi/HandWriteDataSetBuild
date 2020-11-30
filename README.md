@@ -15,11 +15,6 @@ This project is the script for building handwriting dataset. A sub-project for B
 pip install -r requirements.txt
 ```
 
-You may need to create a data folder under main folder by
-```
-mkdir data
-```
-
 ## Usage Example
 ```
 python3 ./src/capture.py
