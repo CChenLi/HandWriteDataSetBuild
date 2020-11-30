@@ -1,7 +1,7 @@
 # HandWriteDataSetBuild 
 
-![example](https://user-images.githubusercontent.com/63531857/100561286-52635e00-326d-11eb-8423-5f75e2b9fb62.png)
-> The above image is an example output of this project. Built by concat 6 output togather.
+![example](https://user-images.githubusercontent.com/63531857/100561705-6a87ad00-326e-11eb-8336-a4fdc3320f3a.jpg)
+> The above image is an example output of this project. Built by concat 6 outputs togather and reverting color
 
 The script for building hand write dataset. A sub-project for Bai character dataset.
 
