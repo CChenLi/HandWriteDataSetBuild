@@ -1,6 +1,9 @@
-# HandWriteDataSetBuild
+![example](https://user-images.githubusercontent.com/63531857/100561286-52635e00-326d-11eb-8423-5f75e2b9fb62.png)
+
+# HandWriteDataSetBuild  
+---------------------------------
 The script for building hand write dataset. A sub-project for Bai character dataset.
---------------------------------
+
 
 ## Build requirement
 ```
