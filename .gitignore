@@ -1,3 +1,9 @@
+# Personal defined
+.DS_Store
+.vscode*
+data/
+src/config.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -5,10 +11,6 @@ __pycache__/
 
 # C extensions
 *.so
-
-.DS_Store
-.vscode*
-data/
 
 # Distribution / packaging
 .Python

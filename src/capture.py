@@ -86,6 +86,7 @@ class Example(QMainWindow):
 
 if __name__ == "__main__":
     master = tk.Tk()
+    master.title("Set config")
     tk.Label(master, text="Label").grid(row=0)
     tk.Label(master, text="UID").grid(row=1)
     tk.Label(master, text="Number of Images").grid(row=2)
