@@ -36,7 +36,7 @@ When all images are finished, you will find all the png file in the folder `data
 
 ## Author
 - Chen Li
-- lichen@g.ucla.edu
+- lichen918@g.ucla.edu
 
 
 ## Acknowledgement
