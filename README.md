@@ -40,5 +40,5 @@ When all images are finished, you will find all the png file in the folder `data
 
 
 ## Acknowledgement
-The picture of the Bai folk song
+The picture of the Bai folk song  
 ![example2](https://user-images.githubusercontent.com/63531857/100561835-cb16ea00-326e-11eb-894c-7cf06e0b5029.jpg)
