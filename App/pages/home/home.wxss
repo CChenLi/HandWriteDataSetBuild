@@ -1,0 +1,14 @@
+page {
+  height: 100%;
+  width: 750rpx;
+
+  justify-content: center;
+  align-items: center;
+}
+.background{
+  background-image: url(https://user-images.githubusercontent.com/63531857/103164044-131c2480-47bb-11eb-86df-581fd5a8c40a.jpg);
+  padding-top: 250rpx;
+  padding-bottom: 250rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

@@ -1,0 +1,15 @@
+<view class='background'>
+  <button class="weui-btn weui-btn_primary">
+    {{action1}}
+  </button>
+  <button class="weui-btn weui-btn_primary">
+    {{action2}}
+  </button>
+  <button class="weui-btn weui-btn_primary"
+    bind:tap="buttonHandler3">
+    {{action3}}
+  </button>
+  <button class="weui-btn weui-btn_primary weui-btn_disabled">
+    {{time}}
+  </button>
+</view>
