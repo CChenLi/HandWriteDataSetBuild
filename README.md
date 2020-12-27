@@ -6,7 +6,7 @@ the lyric of a Bai folk song.
 
 This project is the script for building handwriting dataset. A sub-project for Bai character dataset. 
 
-Good news! Chen Li is developing a WeChat App that allow you to create and upload batches on you smartphone.
+Good news! Chen Li is having Winter break and he is developing a WeChat App that allow you to create and upload batches on you smartphone.  
 <img src="https://user-images.githubusercontent.com/63531857/103164353-0c8fac00-47bf-11eb-97d5-29852f0d819f.jpg" width="70%">
 
 
