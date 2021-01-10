@@ -2,6 +2,7 @@
 
 Good news! Chen Li is having Winter break and he is developing a WeChat App that allows you to create and upload batches on your smartphone. No programming experiences required anymore!
 <img src="https://user-images.githubusercontent.com/63531857/103164353-0c8fac00-47bf-11eb-97d5-29852f0d819f.jpg" width="70%">
+<img width="223" alt="Screen Shot 2021-01-10 at 2 08 14 PM" src="https://user-images.githubusercontent.com/63531857/104136810-5050ec80-534d-11eb-8fe3-470982eee7e2.png">
 
 
 -------------
