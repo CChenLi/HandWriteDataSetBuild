@@ -3,7 +3,7 @@ const app = getApp();
 Page({
   data: {
     action1: 'Create Batch',
-    action2: 'Batchs Created',
+    action2: 'Register',
     action3: 'Upload',
     time: app.globalData.now
   },
@@ -27,6 +27,16 @@ Page({
           console.log('Uploaded canceled');
         }
       }
+    });
+  },
+  createHandler(event) {
+    wx.navigateTo({
+      url: '../create/create',
+    });
+  },
+  registerHandler(event) {
+    wx.navigateTo({
+      url: '../register/register',
     });
   }
 });

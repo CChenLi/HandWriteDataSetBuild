@@ -1,8 +1,10 @@
 <view class='background'>
-  <button class="weui-btn weui-btn_primary">
+  <button class="weui-btn weui-btn_primary"
+    bind:tap="createHandler">
     {{action1}}
   </button>
-  <button class="weui-btn weui-btn_primary">
+  <button class="weui-btn weui-btn_primary"
+    bind:tap="registerHandler">
     {{action2}}
   </button>
   <button class="weui-btn weui-btn_primary"
