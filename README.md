@@ -1,10 +1,16 @@
 # HandWriteDataSetBuild 
 
+Good news! Chen Li is having Winter break and he is developing a WeChat App that allows you to create and upload batches on your smartphone. No programming experiences required anymore!
+<img src="https://user-images.githubusercontent.com/63531857/103164353-0c8fac00-47bf-11eb-97d5-29852f0d819f.jpg" width="70%">
+
+
+-------------
 ![example](https://user-images.githubusercontent.com/63531857/100561705-6a87ad00-326e-11eb-8336-a4fdc3320f3a.jpg)
 > The above image is an example output of this project. Built by concat 6 outputs togather and reverting color. Each character is collected from 
 the lyric of a Bai folk song.
 
 This project is the script for building handwriting dataset. A sub-project for Bai character dataset. 
+
 
 ### Before you want to contribute to this project, please contact me to get your unique User-ID to avoid redundant work.
 
