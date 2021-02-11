@@ -11,7 +11,7 @@ Page({
     const that = this;
     wx.showModal({
       title: "Upload",
-      content: 'Do you wanna upload?',
+      content: 'Upload?',
       cancelColor: 'cancelColor',
       success (res) {
         if (res.confirm) {

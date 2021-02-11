@@ -50,18 +50,18 @@
 -->
 <view class="weui-cell weui-cell_input weui-cell_vcode">
 <view class="weui-cell__hd">
-<view class="weui-label">手机号</view>
+<view class="weui-label">Phone</view>
 </view>
 <view class="weui-cell__bd">
-<input class="weui-input" placeholder="请输入手机号" />
+<input class="weui-input" placeholder="phone number" />
 </view>
 <view class="weui-cell__ft">
-<view class="weui-vcode-btn">获取验证码</view>
+<view class="weui-vcode-btn">verify</view>
 </view>
 </view>
 <view class="weui-cell weui-cell_input">
 <view class="weui-cell__hd">
-<view class="weui-label">日期</view>
+<view class="weui-label">Date</view>
 </view>
 <view class="weui-cell__bd">
 <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
@@ -71,7 +71,7 @@
 </view>
 <view class="weui-cell weui-cell_input">
 <view class="weui-cell__hd">
-<view class="weui-label">时间</view>
+<view class="weui-label">Time</view>
 </view>
 <view class="weui-cell__bd">
 <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
@@ -81,10 +81,10 @@
 </view>
 <view class="weui-cell weui-cell_input weui-cell_vcode">
 <view class="weui-cell__hd">
-<view class="weui-label">验证码</view>
+<view class="weui-label">Verify code</view>
 </view>
 <view class="weui-cell__bd">
-<input class="weui-input" placeholder="请输入验证码" />
+<input class="weui-input" placeholder="Input" />
 </view>
 <view class="weui-cell__ft">
 <image class="weui-vcode-img" src="../images/vcode.jpg" style="width: 108px"></image>
@@ -169,7 +169,7 @@
 </view>
 <view class="weui-cell weui-cell_select">
 <view class="weui-cell__hd weui-cell__hd_in-select-after">
-<view class="weui-label">国家/地区</view>
+<view class="weui-label">Country</view>
 </view>
 <view class="weui-cell__bd">
 <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">

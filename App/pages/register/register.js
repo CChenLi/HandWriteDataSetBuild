@@ -17,7 +17,7 @@ Page({
   { name: '澳妍', value: '5' }
   ],
    
-  date: "20210-01-01",
+  date: "2021-01-01",
   time: "00:00",
    
   countryCodes: ["+86", "+80", "+84", "+87"],
@@ -26,7 +26,7 @@ Page({
   countries: ["中国", "美国", "英国"],
   countryIndex: 0,
    
-  accounts: ["微信号", "QQ", "Email"],
+  accounts: ["WeChat", "QQ", "Email"],
   accountIndex: 0,
    
   isAgree: false
